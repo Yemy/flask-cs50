@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <p>
+        A share of {{ query.name}} Advantage - Class A ({{ query.symbol }}) costs {{ query.price | usd}}.
+    </p>
+{% endblock %}
